@@ -1,0 +1,9 @@
+{
+  "name": "omnifood",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ndstephens/omnifood.git",
+  "author": "Nathaniel Stephens <ndstephens@gmail.com>",
+  "license": "MIT",
+  "dependencies": {}
+}
