@@ -19,19 +19,67 @@ html {
 /* ---------------------------------- */
 .row {
   width: 90%;
-  max-width: 960px;
+  max-width: 1140px;
   margin: 0 auto;
+}
+section {
+  padding: 80px 0;
+}
+.box {
+  padding: 1%;
 }
 
 /* ----- HEADINGS ----- */
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
 h1 {
   margin: 0 0 20px 0;
   color: #eee;
   font-size: 2.4rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   word-spacing: 4px;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 1.8rem;
+  word-spacing: 2px;
+  text-align: center;
+  margin: 0 0 30px 0;
+  letter-spacing: 1px;
+}
+h2::after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: '';
+  width: 100px;
+  margin: 30px auto 0 auto;
+}
+h3 {
+  font-size: 1.1rem;
+  margin: 0 0 15px 0;
+}
+
+/* ----- PARAGRAPHS ----- */
+.long-copy {
+  line-height: 1.45rem;
+  width: 80%;
+  margin-left: 10%;
+}
+.box p {
+  font-size: 0.9rem;
+  line-height: 1.45rem;
+}
+
+/* ----- ICONS ----- */
+.icon-big {
+  font-size: 3.5rem;
+  display: block;
+  color: #e67e22;
+  margin: 0 0 10px 0;
 }
 
 /* ----- BUTTONS ----- */
