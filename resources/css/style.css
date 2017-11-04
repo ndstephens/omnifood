@@ -23,7 +23,13 @@ header {
   height: 100vh; /* text-align: center; */
 }
 h1 {
-  margin: 0;
+  margin: 0 0 20px 0;
+  color: #eee;
+  font-size: 2.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
 }
 .hero-text-box {
   position: relative;
@@ -32,4 +38,34 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 200ms, border 200ms, color 200ms;
+}
+.btn-full:link,
+.btn-full:visited {
+  color: #eee;
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  margin-right: 1rem;
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+  color: #e67e22;
+  border: 1px solid #e67e22;
+}
+.btn-full:hover,
+.btn-full:active,
+.btn-ghost:hover,
+.btn-ghost:active {
+  color: #eee;
+  background-color: #cf6d17;
+  border: 1px solid #cf6d17;
 }
