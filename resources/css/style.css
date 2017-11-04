@@ -1,3 +1,6 @@
+/* -------------------------------------------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -10,18 +13,17 @@ html {
   font-weight: 300;
   text-rendering: optimizeLegibility;
 }
+
+/* -------------------------------------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ---------------------------------- */
 .row {
+  width: 90%;
   max-width: 960px;
   margin: 0 auto;
 }
 
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('/resources/css/img/hero.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh; /* text-align: center; */
-}
+/* ----- HEADINGS ----- */
 h1 {
   margin: 0 0 20px 0;
   color: #eee;
@@ -31,15 +33,8 @@ h1 {
   letter-spacing: 1px;
   word-spacing: 4px;
 }
-.hero-text-box {
-  position: relative;
-  width: 960px;
-  max-width: 90%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
+/* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -68,4 +63,54 @@ h1 {
   color: #eee;
   background-color: #cf6d17;
   border: 1px solid #cf6d17;
+}
+
+/* -------------------------------------------------------------------------- */
+/* HEADER SECTION */
+/* ---------------------------------- */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/resources/css/img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.hero-text-box {
+  position: absolute;
+  width: 960px;
+  max-width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin: 20px 0 0 0;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin: 55px 0 0 0;
+}
+.main-nav li {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #eee;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 200ms;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
 }
