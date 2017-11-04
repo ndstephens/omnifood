@@ -105,3 +105,5 @@ typings/
 
 
 # End of https://www.gitignore.io/api/node
+resources/css/img
+resources/img
