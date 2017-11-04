@@ -79,7 +79,7 @@ h3 {
   font-size: 3.5rem;
   display: block;
   color: #e67e22;
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
 }
 
 /* ----- BUTTONS ----- */
@@ -131,7 +131,6 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .logo {
   height: 100px;
   width: auto;
@@ -146,7 +145,7 @@ header {
 }
 .main-nav li {
   display: inline-block;
-  margin: 0 0 0 40px;
+  margin-left: 40px;
 }
 .main-nav li a:link,
 .main-nav li a:visited {
@@ -161,6 +160,13 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
+}
+
+/* -------------------------------------------------------------------------- */
+/* FEATURES SECTION */
+/* ---------------------------------- */
+.section-features .long-copy {
+  margin-bottom: 30px;
 }
 
 /* -------------------------------------------------------------------------- */
