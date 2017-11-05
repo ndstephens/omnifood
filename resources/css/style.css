@@ -9,10 +9,14 @@
 html {
   color: #555;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
+  /* //* use an even number like 20 (instead of 16) for easier math using rem's throughout page */
   font-size: 20px;
   font-weight: 300;
+  /* //* never saw this before, should learn more about it */
   text-rendering: optimizeLegibility;
 }
+
+/* //* clearfix hack used after floats */
 .clearfix {
   zoom: 1;
 }
@@ -32,6 +36,7 @@ html {
   max-width: 1140px;
   margin: 0 auto;
 }
+/* //* creates even and consistent vertical separation between all 'sections' */
 section {
   padding: 80px 0;
 }
@@ -60,6 +65,7 @@ h2 {
   margin: 0 0 30px 0;
   letter-spacing: 1px;
 }
+/* //* custom 'orange' dividing line that comes after all <h2>'s, drawn with CSS */
 h2::after {
   display: block;
   height: 2px;
@@ -90,6 +96,33 @@ h3 {
   display: block;
   color: #e67e22;
   margin-bottom: 10px;
+}
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 1.2rem;
+  margin-right: 5px;
+  /* //* attempt to align text with the icon */
+  margin-top: -5px;
+  vertical-align: middle;
+}
+
+/* ----- LINKS ----- */
+a:link,
+a:visited {
+  text-decoration-line: none;
+  color: #e67e22;
+  /* //* replace standard link underline with custom border-bottom */
+  border-bottom: 1px solid #e67e22;
+  padding-bottom: 1px;
+  transition: border-bottom 200ms, color 200ms;
+}
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
 }
 
 /* ----- BUTTONS ----- */
@@ -127,8 +160,10 @@ h3 {
 /* HEADER SECTION */
 /* ---------------------------------- */
 header {
+  /* //* use gradient to make the image darker, almost like a tint */
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('/resources/css/img/hero.jpg');
+  /* //* properties to create fluid screen-size image */
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -149,6 +184,7 @@ header {
 }
 
 .main-nav {
+  /* //* how to make an <ul> useful for navigation */
   float: right;
   list-style: none;
   margin: 55px 0 0 0;
@@ -197,7 +233,9 @@ header {
 .meal-photo {
   width: 100%;
   margin: 0;
+  /* //* keeps photo within containing box or element */
   overflow: hidden;
+  /* //* makes photo appear darker b/c it's container (parent element) is black and the child <img> is given opacity */
   background-color: #000;
 }
 .meal-photo img {
@@ -218,7 +256,9 @@ header {
 .section-steps {
   background-color: #eee;
 }
+/* //* use 'first-child' and 'last-child' to select sibling div's with same class */
 .steps-box:first-child {
+  /* //* pushes the img to the right border of the container */
   text-align: right;
   padding-right: 3%;
   margin-top: 30px;
@@ -253,4 +293,20 @@ header {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+/* //* removes visible link underline created by 'REUSABLE COMPONENTS/LINKS' CSS above (on <a> tags) */
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* CITIES SECTION */
+/* ---------------------------------- */
+.box img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.city-feature {
+  font-size: 0.8rem;
 }
