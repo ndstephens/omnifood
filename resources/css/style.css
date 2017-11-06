@@ -6,6 +6,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+*:focus {
+  outline: none; /*//* removes all default outlining of user-focused elements on the page */
+}
 html {
   color: #555;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
@@ -123,8 +126,10 @@ a:active {
 }
 
 /*//? ---------- BUTTONS ---------- */
+/*//* include all button types in this area */
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type='submit'] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -133,7 +138,8 @@ a:active {
   transition: background-color 200ms, border 200ms, color 200ms;
 }
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type='submit'] {
   color: #eee;
   background-color: #e67e22;
   border: 1px solid #e67e22;
@@ -147,7 +153,9 @@ a:active {
 .btn-full:hover,
 .btn-full:active,
 .btn-ghost:hover,
-.btn-ghost:active {
+.btn-ghost:active,
+input[type='submit']:hover,
+input[type='submit']:active {
   color: #eee;
   background-color: #cf6d17;
   border: 1px solid #cf6d17;
@@ -159,7 +167,7 @@ a:active {
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('/resources/css/img/hero.jpg'); /*//* use gradient to make the image darker, almost like a tint */
-  background-size: cover; /*//* properties to create fluid screen-size image */
+  background-size: cover; /*//* properties to create screen-size responsive image */
   background-position: center;
   height: 100vh;
   background-attachment: fixed; /*//* creates the fixed parallax effect */
@@ -360,7 +368,7 @@ cite img {
 }
 .plan-box div:first-child {
   background-color: #fbfbfb; /*//* very subtle color difference for top pricing box */
-  border-top-left-radius: 5px;
+  border-top-left-radius: 5px; /*//* had to re-add border radius after changing background-color*/
   border-top-right-radius: 5px;
 }
 .plan-box div:last-child {
@@ -386,4 +394,27 @@ cite img {
 .plan-box ul li {
   padding: 5px 0;
   font-size: 0.8rem;
+}
+
+/*//?-------------------------------------------------------------------------*/
+/*//?     CONTACT FORM SECTION                                                */
+/*//?-------------------------------------------------------------------------*/
+.contact-form {
+  width: 70%;
+  margin: 0 auto;
+}
+input[type='text'],
+/*//* using attribute selectors */ input[type='email'],
+select,
+textarea {
+  width: 100%;
+  padding: 7px; /*//* use padding to increase their size, instead of height */
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+textarea {
+  height: 100px;
+}
+input[type='checkbox'] {
+  margin: 10px 5px 10px 0;
 }
