@@ -166,7 +166,7 @@ input[type='submit']:active {
 /*//?-------------------------------------------------------------------------*/
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('/resources/css/img/hero.jpg'); /*//* use gradient to make the image darker, almost like a tint */
+    url('./img/hero.jpg'); /*//* use gradient to make the image darker, almost like a tint */
   background-size: cover; /*//* properties to create screen-size responsive image */
   background-position: center;
   height: 100vh;
@@ -317,7 +317,7 @@ header {
 /*//?-------------------------------------------------------------------------*/
 .section-testimonials {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url('/resources/css/img/back-customers.jpg');
+    url('./img/back-customers.jpg');
   background-size: cover;
   color: #eee;
   background-attachment: fixed; /*//* gives fixed parallax effect */
