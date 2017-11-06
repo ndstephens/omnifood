@@ -418,3 +418,72 @@ textarea {
 input[type='checkbox'] {
   margin: 10px 5px 10px 0;
 }
+
+/*//?-------------------------------------------------------------------------*/
+/*//?     FOOTER SECTION                                                      */
+/*//?-------------------------------------------------------------------------*/
+footer {
+  background-color: #333;
+  padding: 20px 0 40px 0;
+  font-size: 0.7rem;
+}
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+.social-links {
+  list-style: none;
+  float: right;
+}
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border-bottom: 0;
+  color: #888; /*//* less important nav links are slightly dim, increase brightness on hover */
+}
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  /*//* transition effect comes from general <a> tag CSS near top of file */
+  border-bottom: 0;
+  color: #ccc;
+}
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 1.2rem;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+  transition: color 200ms;
+}
+/*//* on hover each social media icon link is highlighted with its specific logo color */
+.ion-social-facebook:hover {
+  color: #3b5998;
+}
+.ion-social-twitter:hover {
+  color: #00aced;
+}
+.ion-social-googleplus:hover {
+  color: #dd4b39;
+}
+.ion-social-instagram:hover {
+  color: #517fa4;
+}
+footer p {
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
