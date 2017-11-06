@@ -340,3 +340,50 @@ cite img {
   margin-right: 10px;
   vertical-align: middle; /*//* centers the text with the image */
 }
+
+/*//?-------------------------------------------------------------------------*/
+/*//?     PRICING PLANS SECTION                                               */
+/*//?-------------------------------------------------------------------------*/
+.section-plans {
+  background-color: #eee;
+}
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 3px 3px #ddd; /*//* very subtle shadow that really makes them pop */
+}
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+.plan-box div:first-child {
+  background-color: #fbfbfb; /*//* very subtle color difference for top pricing box */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.plan-box div:last-child {
+  text-align: center; /*//* centers the Sign Up bottom */
+  border-bottom: 0; /*//* lowest plan-box should not have a bottom border */
+}
+.plan-price {
+  font-size: 3rem;
+  font-weight: 100; /*//* decrease font-weight b/c font-size was increased dramatically */
+  margin-bottom: 10px;
+  color: #e67e22;
+}
+.plan-price span {
+  font-size: 0.3em; /*//* using 'em' so that its size follows the parent font-size */
+  font-weight: 300; /*//* increase font-weight back to normal since parent's was decreased */
+}
+.plan-price-meal {
+  font-size: 0.8rem;
+}
+.plan-box ul {
+  list-style: none;
+}
+.plan-box ul li {
+  padding: 5px 0;
+  font-size: 0.8rem;
+}
