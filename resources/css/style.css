@@ -1,6 +1,6 @@
-/* -------------------------------------------------------------------------- */
-/* BASIC SETUP */
-/* ---------------------------------- */
+/*//?-------------------------------------------------------------------------*/
+/*//?     BASIC SETUP                                                         */
+/*//?-------------------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +9,12 @@
 html {
   color: #555;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
-  /* //* use an even number like 20 (instead of 16) for easier math using rem's throughout page */
-  font-size: 20px;
+  font-size: 20px; /*//* use 20 (instead of 16) for easier math with rem's */
   font-weight: 300;
-  /* //* never saw this before, should learn more about it */
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility; /*//* learn more about this CSS property */
 }
 
-/* //* clearfix hack used after floats */
+/*//* clearfix hack used after floats */
 .clearfix {
   zoom: 1;
 }
@@ -28,15 +26,15 @@ html {
   visibility: hidden;
 }
 
-/* -------------------------------------------------------------------------- */
-/* REUSABLE COMPONENTS */
-/* ---------------------------------- */
+/*//?-------------------------------------------------------------------------*/
+/*//?     REUSABLE COMPONENTS                                                 */
+/*//?-------------------------------------------------------------------------*/
 .row {
   width: 90%;
   max-width: 1140px;
   margin: 0 auto;
 }
-/* //* creates even and consistent vertical separation between all 'sections' */
+/*//* creates even and consistent vertical separation between all 'sections' */
 section {
   padding: 80px 0;
 }
@@ -44,7 +42,7 @@ section {
   padding: 1%;
 }
 
-/* ----- HEADINGS ----- */
+/*//? ---------- HEADINGS ---------- */
 h1,
 h2,
 h3 {
@@ -65,12 +63,12 @@ h2 {
   margin: 0 0 30px 0;
   letter-spacing: 1px;
 }
-/* //* custom 'orange' dividing line that comes after all <h2>'s, drawn with CSS */
+/*//* custom 'orange' dividing line that comes after all <h2>'s, drawn with CSS */
 h2::after {
   display: block;
   height: 2px;
   background-color: #e67e22;
-  content: '';
+  content: ''; /*//* adds empty space 'content' */
   width: 100px;
   margin: 30px auto 0 auto;
 }
@@ -79,7 +77,7 @@ h3 {
   margin: 0 0 15px 0;
 }
 
-/* ----- PARAGRAPHS ----- */
+/*//? ---------- PARAGRAPHS ---------- */
 .long-copy {
   line-height: 1.45rem;
   width: 80%;
@@ -90,7 +88,7 @@ h3 {
   line-height: 1.45rem;
 }
 
-/* ----- ICONS ----- */
+/*//? ---------- ICONS ---------- */
 .icon-big {
   font-size: 3.5rem;
   display: block;
@@ -100,21 +98,20 @@ h3 {
 .icon-small {
   display: inline-block;
   width: 30px;
-  text-align: center;
+  text-align: center; /*//* aligns horizontally */
   color: #e67e22;
   font-size: 1.2rem;
   margin-right: 5px;
-  /* //* attempt to align text with the icon */
+  /*//* attempt to align text vertically with the icon */
   margin-top: -5px;
   vertical-align: middle;
 }
 
-/* ----- LINKS ----- */
+/*//? ---------- LINKS ---------- */
 a:link,
 a:visited {
-  text-decoration-line: none;
   color: #e67e22;
-  /* //* replace standard link underline with custom border-bottom */
+  text-decoration-line: none; /*//* replace standard link underline with custom border-bottom */
   border-bottom: 1px solid #e67e22;
   padding-bottom: 1px;
   transition: border-bottom 200ms, color 200ms;
@@ -122,10 +119,10 @@ a:visited {
 a:hover,
 a:active {
   color: #555;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid transparent; /*//* transition between color and 'transparent' */
 }
 
-/* ----- BUTTONS ----- */
+/*//? ---------- BUTTONS ---------- */
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -156,17 +153,16 @@ a:active {
   border: 1px solid #cf6d17;
 }
 
-/* -------------------------------------------------------------------------- */
-/* HEADER SECTION */
-/* ---------------------------------- */
+/*//?-------------------------------------------------------------------------*/
+/*//?     HEADER SECTION                                                      */
+/*//?-------------------------------------------------------------------------*/
 header {
-  /* //* use gradient to make the image darker, almost like a tint */
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('/resources/css/img/hero.jpg');
-  /* //* properties to create fluid screen-size image */
-  background-size: cover;
+    url('/resources/css/img/hero.jpg'); /*//* use gradient to make the image darker, almost like a tint */
+  background-size: cover; /*//* properties to create fluid screen-size image */
   background-position: center;
   height: 100vh;
+  background-attachment: fixed; /*//* creates the fixed parallax effect */
 }
 .hero-text-box {
   position: absolute;
@@ -183,8 +179,8 @@ header {
   margin: 20px 0 0 0;
 }
 
+/*//* how to make a <ul> useful for navigation */
 .main-nav {
-  /* //* how to make an <ul> useful for navigation */
   float: right;
   list-style: none;
   margin: 55px 0 0 0;
@@ -200,7 +196,7 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.9rem;
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px solid transparent; /*//* transition between color and transparent */
   transition: border-bottom 200ms;
 }
 .main-nav li a:hover,
@@ -208,16 +204,16 @@ header {
   border-bottom: 2px solid #e67e22;
 }
 
-/* -------------------------------------------------------------------------- */
-/* FEATURES SECTION */
-/* ---------------------------------- */
+/*//?-------------------------------------------------------------------------*/
+/*//?     FEATURES SECTION                                                    */
+/*//?-------------------------------------------------------------------------*/
 .section-features .long-copy {
   margin-bottom: 30px;
 }
 
-/* -------------------------------------------------------------------------- */
-/* MEALS SECTION */
-/* ---------------------------------- */
+/*//?-------------------------------------------------------------------------*/
+/*//?     MEALS SECTION                                                       */
+/*//?-------------------------------------------------------------------------*/
 .section-meals {
   padding: 0;
 }
@@ -233,10 +229,8 @@ header {
 .meal-photo {
   width: 100%;
   margin: 0;
-  /* //* keeps photo within containing box or element */
-  overflow: hidden;
-  /* //* makes photo appear darker b/c it's container (parent element) is black and the child <img> is given opacity */
-  background-color: #000;
+  overflow: hidden; /*//* keeps photo within containing box or element */
+  background-color: #000; /*//* makes photo appear darker b/c it's container (parent element) is black and the child <img> is given opacity */
 }
 .meal-photo img {
   width: 100%;
@@ -250,16 +244,15 @@ header {
   transform: scale(1.05);
 }
 
-/* -------------------------------------------------------------------------- */
-/* HOW IT WORKS SECTION */
-/* ---------------------------------- */
+/*//?-------------------------------------------------------------------------*/
+/*//?     HOW IT WORKS SECTION                                                */
+/*//?-------------------------------------------------------------------------*/
 .section-steps {
   background-color: #eee;
 }
-/* //* use 'first-child' and 'last-child' to select sibling div's with same class */
+/*//* use 'first-child' and 'last-child' to select sibling div's with same class */
 .steps-box:first-child {
-  /* //* pushes the img to the right border of the container */
-  text-align: right;
+  text-align: right; /*//* pushes the img to the right border of the container */
   padding-right: 3%;
   margin-top: 30px;
 }
@@ -294,19 +287,56 @@ header {
   width: auto;
   margin-right: 10px;
 }
-/* //* removes visible link underline created by 'REUSABLE COMPONENTS/LINKS' CSS above (on <a> tags) */
+/*//* removes visible link underline created by 'REUSABLE COMPONENTS/LINKS' CSS above (on <a> tags) */
 .btn-app:link,
 .btn-app:visited {
   border: 0;
 }
 
-/* -------------------------------------------------------------------------- */
-/* CITIES SECTION */
-/* ---------------------------------- */
+/*//?-------------------------------------------------------------------------*/
+/*//?     CITIES SECTION                                                      */
+/*//?-------------------------------------------------------------------------*/
 .box img {
   width: 100%;
   margin-bottom: 15px;
 }
 .city-feature {
   font-size: 0.8rem;
+}
+
+/*//?-------------------------------------------------------------------------*/
+/*//?     TESTIMONIAL SECTION                                                 */
+/*//?-------------------------------------------------------------------------*/
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url('/resources/css/img/back-customers.jpg');
+  background-size: cover;
+  color: #eee;
+  background-attachment: fixed; /*//* gives fixed parallax effect */
+}
+blockquote {
+  padding: 2%;
+  font-style: italic; /*//* needed to include 'italic' in the Google Font cdn */
+  line-height: 1.45rem;
+  position: relative; /*//* property needed for absolute positioning of "quote" created below */
+  margin-top: 40px;
+}
+blockquote:before {
+  content: '\201C'; /*//* GLYPH ISO special character (look up online) */
+  font-size: 5rem;
+  display: block; /*//* made a 'block' so it'd sit above the text */
+  position: absolute;
+  top: -5px;
+  left: -8px;
+}
+cite {
+  font-size: 0.9rem;
+  margin-top: 25px;
+  display: block; /*//* made a 'block' element so it'd sit on its own line */
+}
+cite img {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle; /*//* centers the text with the image */
 }
