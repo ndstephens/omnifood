@@ -30,6 +30,12 @@
     margin-right: 5px;
   }
 
+  /*//* 'fixed' background images don't always work on mobile devices */
+  header,
+  .section-testimonials {
+    background-attachment: scroll;
+  }
+
   /*//? ----- HOW IT WORKS SECTION ----- */
   .steps-box {
     margin-top: 10px;
