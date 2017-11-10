@@ -10,11 +10,13 @@
   outline: none; /*//* removes all default outlining of user-focused elements on the page */
 }
 html {
+  background-color: #fff;
   color: #555;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   font-size: 20px; /*//* use 20 (instead of 16) for easier math with rem's */
   font-weight: 300;
   text-rendering: optimizeLegibility; /*//* learn more about this CSS property */
+  overflow-x: hidden;
 }
 
 /*//* clearfix hack used after floats */
@@ -33,7 +35,7 @@ html {
 /*//?     REUSABLE COMPONENTS                                                 */
 /*//?-------------------------------------------------------------------------*/
 .row {
-  width: 90%;
+  /* width: 90%; */
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -63,7 +65,7 @@ h2 {
   font-size: 1.8rem;
   word-spacing: 2px;
   text-align: center;
-  margin: 0 0 30px 0;
+  margin-bottom: 30px;
   letter-spacing: 1px;
 }
 /*//* custom 'orange' dividing line that comes after all <h2>'s, drawn with CSS */
@@ -77,14 +79,14 @@ h2::after {
 }
 h3 {
   font-size: 1.1rem;
-  margin: 0 0 15px 0;
+  margin-bottom: 15px;
 }
 
 /*//? ---------- PARAGRAPHS ---------- */
 .long-copy {
   line-height: 1.45rem;
-  width: 80%;
-  margin-left: 10%;
+  width: 70%;
+  margin-left: 15%;
 }
 .box p {
   font-size: 0.9rem;
@@ -104,17 +106,18 @@ h3 {
   text-align: center; /*//* aligns horizontally */
   color: #e67e22;
   font-size: 1.2rem;
-  margin-right: 5px;
+  margin-right: 10px;
   /*//* attempt to align text vertically with the icon */
   margin-top: -5px;
   vertical-align: middle;
+  line-height: 120%;
 }
 
 /*//? ---------- LINKS ---------- */
 a:link,
 a:visited {
   color: #e67e22;
-  text-decoration-line: none; /*//* replace standard link underline with custom border-bottom */
+  text-decoration: none; /*//* replace standard link underline with custom border-bottom */
   border-bottom: 1px solid #e67e22;
   padding-bottom: 1px;
   transition: border-bottom 200ms, color 200ms;
@@ -143,7 +146,7 @@ input[type='submit'] {
   color: #eee;
   background-color: #e67e22;
   border: 1px solid #e67e22;
-  margin-right: 1rem;
+  margin-right: 15px;
 }
 .btn-ghost:link,
 .btn-ghost:visited {
@@ -174,8 +177,9 @@ header {
 }
 .hero-text-box {
   position: absolute;
-  width: 960px;
-  max-width: 90%;
+  width: 1140px;
+  /* width: 960px; */
+  /* max-width: 90%; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -184,14 +188,14 @@ header {
   height: 100px;
   width: auto;
   float: left;
-  margin: 20px 0 0 0;
+  margin-top: 20px;
 }
 
 /*//* how to make a <ul> useful for navigation */
 .main-nav {
   float: right;
   list-style: none;
-  margin: 55px 0 0 0;
+  margin-top: 55px;
 }
 .main-nav li {
   display: inline-block;
@@ -249,7 +253,7 @@ header {
 }
 .meal-photo img:hover {
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
 
 /*//?-------------------------------------------------------------------------*/
@@ -258,32 +262,35 @@ header {
 .section-steps {
   background-color: #eee;
 }
+.steps-box {
+  margin-top: 30px;
+}
 /*//* use 'first-child' and 'last-child' to select sibling div's with same class */
 .steps-box:first-child {
   text-align: right; /*//* pushes the img to the right border of the container */
   padding-right: 3%;
-  margin-top: 30px;
 }
 .steps-box:last-child {
+  text-align: left;
   padding-left: 3%;
-  margin-top: 40px;
+  margin-top: 70px;
 }
 .app-screen {
   width: 40%;
 }
 .works-step {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .works-step:last-of-type {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 .works-step div {
   color: #e67e22;
   display: inline-block;
   border: 2px solid #e67e22;
   border-radius: 50%;
-  height: 55px;
-  width: 55px;
+  height: 54px;
+  width: 54px;
   text-align: center;
   padding: 5px;
   float: left;
@@ -306,10 +313,11 @@ header {
 /*//?-------------------------------------------------------------------------*/
 .box img {
   width: 100%;
+  height: auto;
   margin-bottom: 15px;
 }
 .city-feature {
-  font-size: 0.8rem;
+  margin-bottom: 5px;
 }
 
 /*//?-------------------------------------------------------------------------*/
@@ -324,7 +332,7 @@ header {
 }
 blockquote {
   padding: 2%;
-  font-style: italic; /*//* needed to include 'italic' in the Google Font cdn */
+  font-style: italic; /*//* need to include 'italic' in the Google Font cdn */
   line-height: 1.45rem;
   position: relative; /*//* property needed for absolute positioning of "quote" created below */
   margin-top: 40px;
@@ -359,7 +367,7 @@ cite img {
   background-color: #fff;
   border-radius: 5px;
   width: 90%;
-  margin: 0 auto;
+  margin-left: 5%;
   box-shadow: 0 3px 3px #ddd; /*//* very subtle shadow that really makes them pop */
 }
 .plan-box div {
@@ -393,18 +401,18 @@ cite img {
 }
 .plan-box ul li {
   padding: 5px 0;
-  font-size: 0.8rem;
 }
 
 /*//?-------------------------------------------------------------------------*/
 /*//?     CONTACT FORM SECTION                                                */
 /*//?-------------------------------------------------------------------------*/
 .contact-form {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
+/*//* using attribute selectors */
 input[type='text'],
-/*//* using attribute selectors */ input[type='email'],
+input[type='email'],
 select,
 textarea {
   width: 100%;
@@ -425,7 +433,7 @@ input[type='checkbox'] {
 footer {
   background-color: #333;
   padding: 20px 0 40px 0;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 .footer-nav {
   list-style: none;
@@ -451,16 +459,15 @@ footer {
   text-decoration: none;
   border-bottom: 0;
   color: #888; /*//* less important nav links are slightly dim, increase brightness on hover */
+  transition: color 200ms;
 }
 .footer-nav li a:hover,
 .footer-nav li a:active {
-  /*//* transition effect comes from general <a> tag CSS near top of file */
-  border-bottom: 0;
   color: #ccc;
 }
 .social-links li a:link,
 .social-links li a:visited {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .ion-social-facebook,

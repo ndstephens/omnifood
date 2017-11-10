@@ -1,0 +1,165 @@
+/*//?-------------------------------------------------------------------------*/
+/*//?     LARGE TABLET TO LARGE MONITORS: FROM 1024px TO 1200px               */
+/*//?-------------------------------------------------------------------------*/
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .row {
+    padding: 0 2%;
+  }
+}
+
+/*//?-------------------------------------------------------------------------*/
+/*//?     SMALL TABLET TO LARGE TABLETS: FROM 768px TO 1023px                 */
+/*//?-------------------------------------------------------------------------*/
+@media only screen and (max-width: 1023px) {
+  html {
+    font-size: 18px;
+  }
+  section {
+    padding: 60px 0;
+  }
+  .long-copy {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .icon-small {
+    width: 20px;
+    margin-right: 5px;
+  }
+
+  /*//? ----- HOW IT WORKS SECTION ----- */
+  .steps-box {
+    margin-top: 10px;
+  }
+  .steps-box:last-child {
+    margin-top: 10px;
+  }
+  .works-step {
+    margin-bottom: 40px;
+  }
+  .works-step:last-of-type {
+    margin-bottom: 60px;
+  }
+  .app-screen {
+    width: 50%;
+  }
+
+  /*//? ----- CITIES SECTION ----- */
+  .city-feature {
+    font-size: 0.8rem;
+  }
+
+  /*//? ----- PRICING PLANS SECTION ----- */
+  .plan-box {
+    width: 100%;
+    margin-left: 0;
+  }
+  .plan-price {
+    font-size: 2.8rem;
+  }
+  .plan-box li {
+    font-size: 0.85rem;
+  }
+
+  /*//? ----- CONTACT FORM SECTION ----- */
+  .contact-form {
+    width: 80%;
+  }
+}
+
+/*//?-------------------------------------------------------------------------*/
+/*//?     LARGE PHONES TO SMALL TABLETS: FROM 481px TO 767px                 */
+/*//?-------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 16px;
+  }
+  .col {
+    width: 100%;
+    margin: 0 0 4% 0;
+  }
+  section {
+    padding: 30px 0;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .long-copy {
+    width: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  /*//? ----- HEADER SECTION ----- */
+  .section-features .col {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  /*//? ----- HEADER SECTION ----- */
+  .hero-text-box,
+  .row {
+    padding: 0 4%;
+  }
+  .main-nav {
+    display: none;
+  }
+
+  /*//? ----- HOW IT WORKS SECTION ----- */
+  .works-step {
+    margin-bottom: 20px;
+    margin-right: 15px;
+  }
+  .works-step:last-of-type {
+    margin-bottom: 20px;
+  }
+  .works-step div {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    font-size: 1.3rem;
+    margin-right: 15px;
+  }
+  .steps-box:first-child {
+    text-align: center;
+    padding-right: 0;
+  }
+  .app-screen {
+    width: 30%;
+  }
+
+  /*//? ----- CITIES SECTION ----- */
+  .box img {
+    width: 50%;
+    float: left;
+    margin-right: 5%;
+  }
+
+  /*//? ----- FOOTER SECTION ----- */
+  .footer-nav {
+    float: none;
+    text-align: center;
+  }
+  .social-links {
+    float: none;
+    text-align: center;
+  }
+}
+
+/*//?-------------------------------------------------------------------------*/
+/*//?     SMALL PHONES: FROM 0 TO 480px                                       */
+/*//?-------------------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+  section {
+    padding: 25px 0;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}
