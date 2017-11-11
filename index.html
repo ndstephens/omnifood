@@ -21,23 +21,24 @@
         <nav>
             <div class="row">
                 <img src="./resources/img/logo-white.png" alt="Omnifood logo" class="logo">
+                <img src="./resources/img/logo.png" alt="Omnifood logo" class="logo-black">
                 <ul class="main-nav">
-                    <li><a href="#">Food Delivery</a></li>
-                    <li><a href="#">How it Works</a></li>
-                    <li><a href="#">Our Cities</a></li>
-                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#features">Food Delivery</a></li>
+                    <li><a href="#steps">How it Works</a></li>
+                    <li><a href="#cities">Our Cities</a></li>
+                    <li><a href="#plans">Sign Up</a></li>
                 </ul>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
-            <a class="btn btn-full" href="#">I’m hungry</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
         </div>
     </header>
 
     <!-- //? FEATURES -->
-    <section class="section-features">
+    <section class="section-features" id="features">
         <div class="row">
             <h2>Get food fast &mdash; not fast food</h2>
             <p class="long-copy">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
@@ -116,7 +117,7 @@
     </section>
 
     <!-- //? HOW IT WORKS -->
-    <section class="section-steps">
+    <section class="section-steps" id="steps">
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
@@ -146,7 +147,7 @@
     </section>
 
     <!-- //? CITIES  -->
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
@@ -237,7 +238,7 @@
     </section>
 
     <!-- //? PRICE PLANS -->
-    <section class="section-plans">
+    <section class="section-plans" id="plans">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
@@ -408,6 +409,12 @@
             </p>
         </div>
     </footer>
+
+
+    <!-- //? ***** SCRIPTS ***** -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="./resources/js/script.js"></script>
 </body>
 
 </html>

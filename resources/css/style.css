@@ -178,8 +178,6 @@ header {
 .hero-text-box {
   position: absolute;
   width: 1140px;
-  /* width: 960px; */
-  /* max-width: 90%; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -191,6 +189,7 @@ header {
   margin-top: 20px;
 }
 
+/*//? ---------- MAIN NAVIGATION ---------- */
 /*//* how to make a <ul> useful for navigation */
 .main-nav {
   float: right;
@@ -214,6 +213,38 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
+}
+
+/*//? ---------- STICKY NAVIGATION ---------- */
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 2px #eee;
+  z-index: 9999;
+}
+.sticky .main-nav {
+  margin-top: 20px;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 8px 0;
+  color: #555;
+}
+.sticky .logo {
+  display: none;
+}
+.sticky .logo-black {
+  display: block;
 }
 
 /*//?-------------------------------------------------------------------------*/
