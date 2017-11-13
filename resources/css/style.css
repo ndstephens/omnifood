@@ -247,6 +247,20 @@ header {
   display: block;
 }
 
+/*//? ---------- SCROLLING ANIMATIONS ---------- */
+/*//* elements need to start as transparent for fadeIn animation to be visible */
+.js--scroll-features,
+.js--scroll-app-screen,
+.js--scroll-cities {
+  opacity: 0;
+}
+/*//* reapply full opacity when '.animated' class gets added from scroll event */
+.js--scroll-features.animated,
+.js--scroll-app-screen.animated,
+.js--scroll-cities.animated {
+  opacity: 1;
+}
+
 /*//?-------------------------------------------------------------------------*/
 /*//?     FEATURES SECTION                                                    */
 /*//?-------------------------------------------------------------------------*/

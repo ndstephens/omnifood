@@ -1,6 +1,6 @@
 $(document).ready(function() {
   //? ----- STICKY NAVIGATION -----
-  //* using the Waypoint plugin library, just for the hell of it, kind of pointless
+  //* using the Waypoint plugin library
   $('.section-features').waypoint(
     function(direction) {
       if (direction == 'down') {
@@ -58,17 +58,17 @@ $(document).ready(function() {
   //     }
   //   });
 
-  //* my method, using 'scrollIntoView' which isn't fully supported yet
+  //* my method using 'scrollIntoView', which isn't fully supported yet
   // $('a[href*="#"]')
   //   .not('[href="#"]')
   //   .click(function(e) {
-  //     e.preventDefault(); //* need to prevent typical #-linking behavior (causes jumps, prevents scrolling)
-  //     document.querySelector(this.hash).scrollIntoView({
+  //     e.preventDefault(); //* prevent typical #-linking behavior (causes jumps, prevents smooth scrolling)
+  //     $(this.hash).scrollIntoView({
   //       behavior: 'smooth'
   //     });
   //   });
 
-  //* my other option, simplifying the script I found (but less error checking)
+  //* my other option, simplifying the script I found (with less error checking)
   $('a[href*="#"]')
     .not('[href="#"]')
     .click(function() {
@@ -82,4 +82,39 @@ $(document).ready(function() {
         1000
       );
     });
+
+  //? ----- SCROLLING ANIMATIONS -----
+  //* using the Animated.CSS library for the effects, Waypoint for scroll event triggering
+  $('.js--scroll-features').waypoint(
+    function() {
+      $('.js--scroll-features').addClass('animated fadeIn');
+    },
+    {
+      offset: '50%'
+    }
+  );
+  $('.js--scroll-app-screen').waypoint(
+    function() {
+      $('.js--scroll-app-screen').addClass('animated fadeInUp');
+    },
+    {
+      offset: '50%'
+    }
+  );
+  $('.js--scroll-cities').waypoint(
+    function() {
+      $('.js--scroll-cities').addClass('animated fadeIn');
+    },
+    {
+      offset: '50%'
+    }
+  );
+  $('.js--scroll-plan').waypoint(
+    function() {
+      $('.js--scroll-plan').addClass('animated pulse');
+    },
+    {
+      offset: '50%'
+    }
+  );
 });
