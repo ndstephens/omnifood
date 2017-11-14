@@ -14,6 +14,22 @@ $(document).ready(function() {
     }
   );
 
+  //? ----- MOBILE NAVIGATION -----
+  $('.js--nav-icon').click(function(e) {
+    e.preventDefault();
+    var nav = $('.js--main-nav');
+    var icon = $('.js--nav-icon i');
+    nav.slideToggle(200);
+
+    if (icon.hasClass('ion-navicon-round')) {
+      icon.addClass('ion-close-round');
+      icon.removeClass('ion-navicon-round');
+    } else {
+      icon.removeClass('ion-close-round');
+      icon.addClass('ion-navicon-round');
+    }
+  });
+
   //? ----- HERO BUTTONS -----
   $('.js--scroll-to-plans').click(function() {
     $('html, body').animate(
