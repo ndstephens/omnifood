@@ -134,3 +134,16 @@ $(document).ready(function() {
     }
   );
 });
+
+//? ----- MAP -----
+//* using gmaps.js to include a map in the contact area
+var map = new GMaps({
+  div: '.map',
+  lat: 40.9861531,
+  lng: -75.15,
+  zoom: 12
+});
+map.addMarker({
+  lat: 40.9861531,
+  lng: -75.2149875
+});

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name='description' content='Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.'>
     <title>Omnifood</title>
 
     <link rel="stylesheet" href="./vendors/css/normalize.css">
@@ -313,78 +314,83 @@
     </section>
 
     <!-- //? CONTACT FORM -->
-    <section class="section-form">
-        <div class="row">
-            <h2>We're happy to hear from you</h2>
-        </div>
-        <div class="row">
-            <form action="#" method="post" class="contact-form">
-                <!-- //* put each label/input pair in its own div with class 'row' -->
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <!-- //* 'for' links with the id of the related input element -->
-                        <label for="name">Name</label>
+    <div class="map-box">
+
+        <div class="map"></div>
+
+        <div class="form-box">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form action="#" method="post" class="contact-form">
+                    <!-- //* put each label/input pair in its own div with class 'row' -->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <!-- //* 'for' links with the id of the related input element -->
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <!-- //* remember to include 'placeholder' and 'required' -->
+                            <!-- //* 'name' is for form submission purposes, 'id' to link with label -->
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <!-- //* remember to include 'placeholder' and 'required' -->
-                        <!-- //* 'name' is for form submission purposes, 'id' to link with label -->
-                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <!-- //* make sure 'type' is 'email' for form validation (when used with 'required') -->
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <!-- //* make sure 'type' is 'email' for form validation (when used with 'required') -->
-                        <input type="email" name="email" id="email" placeholder="Your email" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="find-us">How did you find us?</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <select name="find-us" id="find-us">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
                             <!-- //* use 'selected' to choose default value -->
                             <option value="friends" selected>Friends</option>
                             <option value="search">Search Engine</option>
                             <option value="ad">Advertisement</option>
                             <option value="other">Other</option>
                         </select>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="news">Newsletter?</label>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="news">Newsletter?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <!-- //* use 'checked' or 'unchecked' for default value -->
+                            <input type="checkbox" name="news" id="news" checked>Yes please
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <!-- //* use 'checked' or 'unchecked' for default value -->
-                        <input type="checkbox" name="news" id="news" checked>Yes please
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="message">Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <!-- //* should use CSS for sizing instead of 'rows' and 'columns' usually -->
+                            <textarea rows="" cols="" name="message" id="message" placeholder="Your message"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="message">Drop us a line</label>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <!-- //* create a blank space placeholder -->
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <!-- //* 'value' supplies button's text -->
+                            <input type="submit" value="Send it!">
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <!-- //* should use CSS for sizing instead of 'rows' and 'columns' usually -->
-                        <textarea rows="" cols="" name="message" id="message" placeholder="Your message"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <!-- //* create a blank space placeholder -->
-                        <label>&nbsp;</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <!-- //* 'value' supplies button's text -->
-                        <input type="submit" value="Send it!">
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-    </section>
+    </div>
 
     <!-- //? FOOTER -->
     <footer>
@@ -418,6 +424,8 @@
     <!-- //? ***** SCRIPTS ***** -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVWz9ZuIeL6PP5hWjuKuwzF3hn3TgGvcw"></script>
+    <script src="./vendors/js/gmaps.js"></script>
     <script src="./resources/js/script.js"></script>
 </body>
 
