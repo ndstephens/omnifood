@@ -1,14 +1,24 @@
 # omnifood
 
-https://ndstephens.github.io/omnifood/
+## Fake food delivery service website
 
-## Learning Project
+Created while taking an online course for the purpose of
+learning and practicing HTML and CSS.  One of my first coding projects.  Not very representative of how I write code now.
 
-This fake site was built while taking an online course for the purpose of
-learning and practicing some HTML and CSS.
+Links in the navigation bar will scroll to sections of the site.  All other links are dummy-links
 
-It could still use several improvements, primarily with its responsiveness. But
-for now I'm moving onto other projects.
+View site [here](https://ndstephens.github.io/omnifood/)
 
-It also shows very poorly and is broken when viewed on github pages. Would need
-to work out all the kinks. Views fine on a local server. Oh well...
+<br>
+
+![ss1](screen-shots/ss1.png)
+
+<br>
+
+![ss2](screen-shots/ss2.png)
+
+<br>
+
+![ss3](screen-shots/ss3.png)
+
+<br>
